@@ -8,7 +8,7 @@ function ProductCard(props: Card) {
   return (
     <div  className=" flex flex-col bg-gray-900 shadow-lg rounded-2xl overflow-hidden h-4/5 border border-gray-800">
       <div className="relative overflow-hidden">
-        <Image src={props.imageUrl} alt={props.productName} className="w-full h-56 object-cover" />
+        <img src={props.imageUrl} alt={props.productName} className="w-full h-56 object-cover" />
       </div>
       <div className="flex flex-col items-center p-6">
         <h1 className="text-md font-bold text-white mb-3 text-center  ">{props.productName}</h1>
