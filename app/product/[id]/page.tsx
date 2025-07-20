@@ -8,13 +8,7 @@ return { title: pro.title,
  description: pro.description, 
  }
 };
-export async function generateStaticParams(){
-    const data = await fetch('https://fakestoreapi.com/products')
-    const products: Card[] = await data.json();
-    return products.map((product) => ({
-        id: product.productId.toString(),
-    }));
-}
+
 async function page({params}: {params: {id: string}}) {
     const { id } = params;
     const data = await fetch(`https://fakestoreapi.com/products/${id}`)
