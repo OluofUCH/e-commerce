@@ -18,7 +18,7 @@ function CategoryCard() {
     <Link href={`/category/${item}`} key={index}  className=" flex flex-col  shadow-lg rounded-2xl overflow-hidden bg-white border border-gray-800">
       
       <div className="flex flex-col items-center p-6">
-        <h1 className="text-md font-bold text-black mb-3 text-center  ">{item}</h1>
+        <h1 className="text-base sm:text-base font-bold text-black mb-3 text-center  ">{item}</h1>
         
       </div>
      
