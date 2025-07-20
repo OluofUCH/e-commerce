@@ -12,7 +12,7 @@ function CategoryCard() {
                 <h1 className="text-md sm:text-lg font-black text-white ">Categories</h1>
                 <p className="text-gray-400  text-sm max-w-2xl mx-auto">All our categories</p>
             </div>
-            <div className="flex justify-center gap-4">
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
 {categories.map((item, index)=>(
 
     <Link href={`/category/${item}`} key={index}  className=" flex flex-col  shadow-lg rounded-2xl overflow-hidden bg-white border border-gray-800">
